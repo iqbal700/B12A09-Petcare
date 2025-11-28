@@ -9,6 +9,7 @@ const Login = () => {
 
     const {setUser, handlegoogleSignIn} = useContext(AuthContext);
     const location = useLocation();
+    console.log(location)
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
 
@@ -21,7 +22,7 @@ const Login = () => {
         signInWithEmailAndPassword(auth, email, pass)
             .then((userCredential) => {
                 setUser(userCredential.user);
-                navigate(location.state);
+                navigate(location.state || '/');
             }) 
             .catch(error => {
                 console.log(error)
@@ -32,9 +33,12 @@ const Login = () => {
     const googleSignIn = () => {
 
         handlegoogleSignIn()
-         .then(result => setUser(result.user))
+         .then(result => {
+            setUser(result.user);
+             navigate(location.state || '/');
+         })
           .catch(error => console.log(error))
-          navigate(location.state);
+         
     }
 
     const handleForget = () => {
