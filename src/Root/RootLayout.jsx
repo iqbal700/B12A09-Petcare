@@ -10,10 +10,9 @@ const RootLayout = () => {
 
         <div className='flex flex-col min-h-screen'>
            
-
             <Navbar></Navbar>
 
-            <div className='flex-1 bg-gray-100'>
+            <div className='flex-1'>
                  <Outlet> </Outlet>
             </div>
            
