@@ -15,7 +15,7 @@ const PopularSection = () => {
    
     return (
         <div className='md:mx-[140px] p-5'>
-            <h1 className='font-bold h1-heading text-5xl text-center p-5'>Popular Pet Section </h1>
+            <h1 className='font-bold h1-heading text-2xl md:text-5xl text-center p-5'>Popular Pet Section </h1>
 
                <div className='grid w-full grid-cols-1 md:grid-cols-3 gap-3'>
                   {

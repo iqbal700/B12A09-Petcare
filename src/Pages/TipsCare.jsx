@@ -65,7 +65,7 @@ const itemVariants = {
 const TipsCare = () => {
     return (
         <div className='w-10/12 mx-auto'>
-            <h1 className='text-3xl text-center h1-heading p-5'>Pet Care Tips</h1>
+            <h1 className=' text-2xl md:text-3xl text-center h1-heading p-5'>Pet Care Tips</h1>
             
            
             <motion.div 
