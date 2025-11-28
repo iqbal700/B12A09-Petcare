@@ -49,7 +49,7 @@ const Navbar = () => {
                   {links} 
             </div>
 
-            <div className="">
+            <div>
                 {
                     user ? <NavLink onClick={handleSignOut} className='btn rounded-lg bg-pink-500 text-white' to='/login'> Logout </NavLink> : <NavLink className='btn bg-pink-500 text-white rounded-lg' to='/login'> Login </NavLink>
                 } 
