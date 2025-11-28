@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.active {
+   color:  rgb(199, 34, 185);
+  
+
+}
+
+.nav-font {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.h1-heading,
+.h2-heading,
+.section-title {
+  
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  
+}
